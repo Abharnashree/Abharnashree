@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+#background {
+    position: fixed; /* Ensure that the background stays fixed */
+    top: 0; /* Position the background at the top of the viewport */
+    left: 0; /* Position the background at the left of the viewport */
+    width: 100%; /* Occupy the full width of the viewport */
+    height: 100%; /* Occupy the full height of the viewport */
+    background-image: url("bg.png"); /* Replace 'bg.png' with your background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#startButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sprite {
+    position: absolute;
+    width: 100%; /* Adjust the sprite width as needed */
+    height: 100%; /* Adjust the sprite height as needed */
+    background-repeat: no-repeat;
+}
+
+#man {
+    background-image: url('man sp.png');
+    left: 100px;
+    top: calc(100% - 125px);
+   
+}
+
+
+#girl {
+    background-image: url('girl sp.png'); /* Replace 'girl_sprite.png' with your girl sprite image */
+    /* Define initial position of the girl sprite */
+    left: 200px;
+    top: calc(100% - 125px); /* Position the girl sprite 100px from the bottom of the background */
+}
+
+
+#balloon1 {
+    background-image: url('balloon.gif');
+    left: 400px;
+    top: calc(100% - 125px);
+}
+
+#balloon2 {
+    background-image: url('balloon.gif');
+    left: 600px;
+    top: calc(100% - 125px);
+}
+
+#balloon3 {
+    background-image: url('balloon.gif');
+    left: 900px;
+    top: calc(100% - 125px);
+}
+
+#balloon4 {
+    background-image: url('balloon.gif');
+    left: 1200px;
+    top: calc(100% - 125px);
+}
+
+
+/* CSS for burst sprites */
+.burst {
+    position: absolute;
+    width: 100px; /* Adjust the burst sprite width as needed */
+    height: 100px; /* Adjust the burst sprite height as needed */
+    background-repeat: no-repeat;
+    display: none; /* Initially hide burst sprites */
+}
+
+
+.hidden {
+    display: none;
+}
